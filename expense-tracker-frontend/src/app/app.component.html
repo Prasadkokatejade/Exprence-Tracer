@@ -1,0 +1,48 @@
+<nz-layout class="layout">
+  <!-- Sidebar -->
+  <nz-sider class="custom-sider">
+    <div class="logo">
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/009/749/751/original/avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg"
+        class="avatar"
+      />
+      <div class="user-info">
+        <strong>Root</strong>
+      </div>
+    </div>
+
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <li nz-menu-item>
+        <a routerLink="/" routerLinkActive="active">
+          <span nz-icon nzType="dashboard" class="menu-icon"></span>
+          <span class="menu-text">Dashboard</span>
+        </a>
+      </li><br>
+
+      <li nz-menu-item>
+        <a routerLink="/income" routerLinkActive="active">
+          <span nz-icon nzType="dollar" class="menu-icon"></span>
+          <span class="menu-text">Income</span>
+        </a>
+      </li><br>
+
+      <li nz-menu-item>
+        <a routerLink="/expense" routerLinkActive="active">
+          <span nz-icon nzType="fall" class="menu-icon"></span>
+          <span class="menu-text">Expense</span>
+        </a>
+      </li>
+    </ul>
+  </nz-sider>
+
+  <!-- Right Layout -->
+  <nz-layout class="right-layout">
+    <nz-header style="background: #fff; padding: 0;"></nz-header>
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+    <nz-footer style="text-align: center;">Footer Text</nz-footer>
+  </nz-layout>
+</nz-layout>
