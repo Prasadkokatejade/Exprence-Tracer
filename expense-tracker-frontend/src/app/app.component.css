@@ -1,9 +1,72 @@
-/* Layout wrapper */
 .layout {
-    min-height: 100vh;
-  }
-  
-  /* Sidebar */
+  min-height: 100vh;
+}
+
+.custom-sider {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #001529;
+  color: white;
+  z-index: 1000;
+}
+
+.right-layout {
+  margin-left: 200px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info strong {
+  font-size: 16px;
+  color: white;
+}
+
+nz-header {
+  background: #fff;
+  height: 64px;
+  padding: 0;
+}
+
+nz-content {
+  margin: 24px 16px;
+}
+
+.inner-content {
+  padding: 24px;
+  background: #fff;
+  min-height: 360px;
+}
+
+nz-footer {
+  text-align: center;
+  background: #f0f2f5;
+}
+
+
+
+
+/* 
   .custom-sider {
     width: 200px;
     min-width: 200px;
@@ -17,13 +80,121 @@
     color: white;
     z-index: 1000;
   }
+   
+  .right-layout {
+    margin-left: 200px;
+  } 
   
-  /* Push right content by the width of the sidebar */
+
+  .logo {
+    display: flex;   
+    align-items: center;
+    height: 60px;
+    padding: 0 16px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .user-info{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-info strong{
+    font-size: 16px;
+  }
+
+  .user-info span{
+    font-size: 13px;
+  }
+
+  .layout {
+    min-height: 100vh;
+  }
+  
+  nz-sider{
+    overflow: auto;
+    height: 100%;
+    position: fixed;
+    left: 0;
+  }
+
+  .right-layout{
+    margin-left: 200px;
+  }
+
+  nz-header{
+    padding: 0;
+    height: 75px;
+  }
+
+  nz-content {
+    margin: 24px 16px 0;
+    overflow: initial;
+  }
+
+  
+  
+our code     
+  .inner-content {
+    padding: 24px;
+    background: white;
+    text-align: center;
+  }
+  
+  nz-footer{
+    text-align: center;
+  }
+
+
+
+  .menu-icon {
+    margin-right: 8px;
+  }
+  
+  .menu-text {
+    vertical-align: middle;
+  }
+
+  
+  ul[nz-menu] {
+    list-style: none;
+    padding-left: 0;
+  }  
+ */
+
+/* 
+  .layout {
+    min-height: 100vh;
+  }
+  
+  .custom-sider {
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    overflow: auto;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #001529;
+    color: white;
+    z-index: 1000;
+  }
+
   .right-layout {
     margin-left: 200px;
   }
   
-  /* Logo + Avatar */
+
   .logo {
     display: flex;
     align-items: center;
@@ -39,8 +210,7 @@
     border-radius: 50%;
     margin-right: 10px;
   }
-  
-  /* Inner content */
+
   .inner-content {
     padding: 24px;
     background: #fff;
@@ -61,4 +231,4 @@
   ul[nz-menu] {
     list-style: none;
     padding-left: 0;
-  }
+  } */

@@ -1,9 +1,0 @@
-<h2>Income Form</h2>
-<form [formGroup]="incomeForm">
-  <label>Title: <input formControlName="title" /></label><br />
-  <label>Amount: <input formControlName="amount" type="number" /></label><br />
-  <label>Date: <input formControlName="date" type="date" /></label><br />
-  <label>Source: <input formControlName="source" /></label><br />
-  <label>Description: <textarea formControlName="description"></textarea></label><br />
-  <button [disabled]="!incomeForm.valid">Submit</button>
-</form>

@@ -1,9 +1,58 @@
+<!-- <nz-layout class="layout">
+  <nz-sider>
+    <div class="logo">
+      <img
+      src="https://static.vecteezy.com/system/resources/previews/009/749/751/original/avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg"
+      alt="Avatar" class="avatar">
+
+      <div class="user-info">
+        <strong>Root</strong>
+      </div>
+    
+    </div>
+    <ul nz-menu nz-Theme="dark" nzMode="inline">
+      <li nz-munu-item routerLink="/">
+        <span nz-icon nzType="dashboard"></span>
+        <span>Dashboard</span>
+      </li>
+
+      <li nz-menu-item routerLink="/income">
+        <span nz-icon nzType="dollar"></span>
+        <span>Income</span>
+      </li>
+
+      <li nz-munu-item routerLink="/expense">
+        <span nz-icon nzType="fall"></span>
+        <span>Expense</span>
+      </li>
+    </ul>
+
+  </nz-sider>
+
+  <nz-layout class="right-layout">
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+
+</nz-layout> -->
+
+
+
+
+<!-- 
+
+
 <nz-layout class="layout">
-  <!-- Sidebar -->
+
+
   <nz-sider class="custom-sider">
     <div class="logo">
       <img
         src="https://static.vecteezy.com/system/resources/previews/009/749/751/original/avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg"
+        alt="Avatar"
         class="avatar"
       />
       <div class="user-info">
@@ -12,37 +61,70 @@
     </div>
 
     <ul nz-menu nzTheme="dark" nzMode="inline">
-      <li nz-menu-item>
-        <a routerLink="/" routerLinkActive="active">
-          <span nz-icon nzType="dashboard" class="menu-icon"></span>
-          <span class="menu-text">Dashboard</span>
-        </a>
-      </li><br>
+      <li nz-menu-item routerLink="/">
+        <span nz-icon nzType="dashboard"></span>
+        <span>Dashboard</span>
+      </li>
 
-      <li nz-menu-item>
-        <a routerLink="/income" routerLinkActive="active">
-          <span nz-icon nzType="dollar" class="menu-icon"></span>
-          <span class="menu-text">Income</span>
-        </a>
-      </li><br>
+      <li nz-menu-item routerLink="/income">
+        <span nz-icon nzType="dollar"></span>
+        <span>Income</span>
+      </li>
 
-      <li nz-menu-item>
-        <a routerLink="/expense" routerLinkActive="active">
-          <span nz-icon nzType="fall" class="menu-icon"></span>
-          <span class="menu-text">Expense</span>
-        </a>
+      <li nz-menu-item routerLink="/expense">
+        <span nz-icon nzType="fall"></span>
+        <span>Expense</span>
       </li>
     </ul>
   </nz-sider>
 
-  <!-- Right Layout -->
+
   <nz-layout class="right-layout">
-    <nz-header style="background: #fff; padding: 0;"></nz-header>
+    <nz-header></nz-header>
     <nz-content>
       <div class="inner-content">
         <router-outlet></router-outlet>
       </div>
     </nz-content>
-    <nz-footer style="text-align: center;">Footer Text</nz-footer>
+    <nz-footer>©2025 Created by YourName</nz-footer>
+  </nz-layout>
+</nz-layout> -->
+
+
+
+
+<nz-layout class="layout">
+  <nz-sider class="custom-sider">
+    <div class="logo">
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/009/749/751/original/avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg"
+        alt="Avatar" class="avatar" />
+      <div class="user-info">
+        <strong>Root</strong>
+      </div>
+    </div>
+
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <li nz-menu-item routerLink="/">
+        <span nz-icon nzType="dashboard" class="menu-icon"></span>
+        <span class="menu-text">Dashboard</span>
+      </li>
+      <li nz-menu-item routerLink="/income">
+        <span nz-icon nzType="dollar" class="menu-icon"></span>
+        <span class="menu-text">Income</span>
+      </li>
+      <li nz-menu-item routerLink="/expense">
+        <span nz-icon nzType="fall" class="menu-icon"></span>
+        <span class="menu-text">Expense</span>
+      </li>
+    </ul>
+  </nz-sider>
+
+  <nz-layout class="right-layout">
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet> <!-- this should display the page dynamically -->
+      </div>
+    </nz-content>
   </nz-layout>
 </nz-layout>
